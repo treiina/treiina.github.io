@@ -1,0 +1,92 @@
+body{
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #00CED1;
+}
+
+a{
+  text-decoration: none;
+}
+
+.wrapper-dropdown{
+  margin-top: 10%;
+  margin-left: 50%;
+  font-size: 14px;
+  width: 150px;
+}
+
+.wrapper-dropdown__choise-name{
+  padding: 15px 25px;
+  border: 2px #B0E0E6;
+  margin: 0;
+  
+  width: 150px;
+  
+  background: #4682B4;
+  color: #FFF8DC;
+  
+  cursor: pointer;
+}
+
+.wrapper-dropdown__choise-list {
+  padding: 0px 0px;
+  margin 0;
+  list-style-type: none;
+  
+  border-left: 2px solid #FFF8DC;
+  border-right: 2px solid #FFF8DC;
+  border-bottom: 2px solid #FFF8DC;
+  border-top: 2px solid #FFF8DC;
+  
+  text-align: center;
+  display: none;
+}
+
+.wrapper-dropdown__choise-list__item{
+  padding: 10px 15px;
+  margin: 5px;
+  border: 0px;
+  background: #4682B4; 
+  display: block; 
+  color: #FFF8DC;
+  cursor: pointer;
+}
+
+.wrapper-dropdown:hover .wrapper-dropdown__choise-list{
+  display: block;
+  transition-duration: 2s;
+}
+
+.wrapper-dropdown:hover .wrapper-dropdown__choise-border:before{
+  display: inline-block;
+  transition-duration: 1s;
+}
+
+.wrapper-dropdown__choise-list__item:hover,
+.wrapper-dropdown__choise-name:hover{
+  background: #4B0082;
+}
+
+.wrapper-dropdown__choise-border {
+  text-align: center;
+}
+
+.wrapper-dropdown__choise-border:before{
+  display: none;
+  position: relative;
+  top: 19px;
+  
+  content: "";
+  width: 0px;
+  height: 0px;
+  
+  margin: 0px;
+  border: 2px;
+  
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #FFF8DC;
+}
+
+.wrapper-dropdown__choise-border:after{
+  display: none;
+}
