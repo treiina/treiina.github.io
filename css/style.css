@@ -1,6 +1,7 @@
 body{
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: #00CED1;
+  text-align: center;
 }
 
 a{
@@ -9,9 +10,10 @@ a{
 
 .wrapper-dropdown{
   margin-top: 10%;
-  margin-left: 50%;
   font-size: 14px;
   width: 150px;
+  position: relative;
+  left: 45%;
 }
 
 .wrapper-dropdown__choise-name{
@@ -23,7 +25,7 @@ a{
   
   background: #4682B4;
   color: #FFF8DC;
-  
+  border-radius: 15px;
   cursor: pointer;
 }
 
@@ -38,6 +40,7 @@ a{
   border-top: 2px solid #FFF8DC;
   
   text-align: center;
+  border-radius: 25px;
   display: none;
 }
 
@@ -48,6 +51,7 @@ a{
   background: #4682B4; 
   display: block; 
   color: #FFF8DC;
+  border-radius: 25px;
   cursor: pointer;
 }
 
